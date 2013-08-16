@@ -1,0 +1,10 @@
+<h1> Listing Tags </h1>
+<ul id="tags">
+<% @tags.each do |tag|%>
+<p>
+<%= link_to tag.name, article_tags_path(@article) %>
+</p>
+<!-- <p> <%= article.body %> </p> -->
+<% end -%>
+<br/>
+<p>
